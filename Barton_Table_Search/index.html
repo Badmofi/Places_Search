@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Places With Search</title>
+    <style>
+        h1{
+            text-align: left;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        th{
+            background-color: #003168;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            padding-right: 60px;
+        }
+        #myTable{
+            float: left;
+        }
+        #controlPanel{
+            background-color: lightgray;
+            border: dashed thin #646e7f;
+            float: right;
+        }
+        .green{
+            background-color: lightgreen;
+        }
+        #outputPanel{
+            background-color: lightskyblue;
+            border: dashed thin navy;
+            display: inline-block;
+            width: 600px;
+        }
+    </style>
+    <script src="a1.js"></script>
+</head>
+<body>
+    <h1>Places with Search</h1>
+    <div id="myTable">
+        <!--JS constructs table in this div-->
+    </div>
+
+    <div id="controlPanel">
+        <p>City: <input id="city" type="text" /> </p> <button id="citySearch">Search by City</button>
+        <br><br>
+        <p>Country: <input id="country" type="text" /> </p> <button id="countrySearch">Search by Country</button>
+        <br><br>
+        <p>Min: <input id="min" type="number" /> </p>
+        <p>Max: <input id="max" type="number" /> </p> <button id="popSearch">Search by Population</button>
+    </div>
+
+    <div id="outputPanel">
+        <!--JS displays CSV-->
+    </div>
+  
+</body>
+</html>
